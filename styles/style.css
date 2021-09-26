@@ -9,12 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -27,19 +21,17 @@
   /* выше установили ограничения для секции */
 }
 
-.logo {
-  width: 183px;
-  height: 32px;
-}
-
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
   z-index: 10;
+  width: 183px;
+  height: 32px;
 }
 
 .header__title {
+  margin: 0;
   margin-left: 64px;
   width: 730px;
   line-height: 96px;
@@ -49,11 +41,17 @@
   z-index: 10;
 }
 
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
 .header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
   width: 388px;
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -61,17 +59,12 @@
 }
 
 .header__main-illustration {
+  display: block;
   position: absolute;
   right: 0px;
   bottom: 0px;
   width: 765px;
   height: 608px;
-}
-
-.header__main-illustration_img {
-  width: 765px;
-  height: 608px;
-  position: relative;
 }
 
 .header__square-pic {
@@ -97,9 +90,7 @@
 
 .two-colomns__brief {
   width: 175px;
-}
-
-.two-colomns__title {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -112,6 +103,7 @@
 }
 
 .two-columns__paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -153,11 +145,9 @@
 .table {
   width: 1100px;
   margin: 0 auto;
-}
-
-.table__string {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .table__cell_theme_white {
@@ -167,12 +157,14 @@
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
 .table__text {
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -189,10 +181,11 @@
   background-position: bottom left;
   background-size: 867px 637px;
   background-repeat: no-repeat;
-  height: 890px;
+  min-height: 890px;
 }
 
 .feynman__title {
+  margin: 0;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -202,6 +195,7 @@
 }
 
 .feynman__subtitle {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -216,6 +210,7 @@
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+  color:#2f80ed;
 }
 
 .kaufman{
@@ -278,7 +273,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
 
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
 }
 
 .footer__author {
@@ -290,6 +289,7 @@
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-style: 700;
@@ -297,6 +297,7 @@
 }
 
 .footer__column-links {
+  padding: 0;
   margin: 20px 0 16px;
   list-style-type: none;
 }
@@ -309,7 +310,7 @@
   text-decoration: none;
 }
 
-.footer__social-ikon{
+.footer__social-icon{
   width: 16px;
   height: 16px;
   margin-right: 10px;
